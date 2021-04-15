@@ -43,6 +43,9 @@ $ rasa train
 # usar no shell
 $ rasa shell
 
+# se tiver ações
+$ rasa run actions
+
 # start servidor
 $ rasa run -m models --enable-api --cors "*" --debug
 
