@@ -37,6 +37,16 @@ $ pip3 install rasa
 # Executar na pasta do bot
 $ rasa init
 
+# treinar um modelo
+$ rasa train
+
+# usar no shell
+$ rasa shell
+
+# start servidor
+$ rasa run -m models --enable-api --cors "*" --debug
+
+
 ```
 
 
