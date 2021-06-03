@@ -3,88 +3,78 @@ version: "2.0"
 nlu:
 - intent: greet
   examples: |
-    - Oi
-    - Olá
     - oi
-    - Como vai?
-    - Bom dia
-    - Boa tarde
-    - Boa noite
-    - Oi, tudo bem?
-    - Olá, como vai?
-    - Olá, tudo bem?
-    - Oi, como vai?
-    - Eai
+    - ola
     - bom dia
     - boa tarde
     - boa noite
 
+
 - intent: goodbye
   examples: |
-    - Até mais
-    - Tchau
-    - Valeu
-    - Até amanhã
+    - boa tarde
+    - ate
     - tchau
-    - Tenha um bom dia
-    - Te vejo breve
 
 - intent: affirm
   examples: |
-    - Sim
-    - S
-    - Claro
-    - Com certeza
     - sim
+    - s
+    - claro
+    - bom
     - correto
 
 - intent: deny
   examples: |
-    - Não
+    - nao
     - n
-    - Nunca
-    - Acho que não
-    - De jeito nenhum
-    - Na verdade não
+    - nunca
+    - acho que nao
+    - sem chance
 
 - intent: mood_great
   examples: |
-    - Perfeito
-    - Ótimo
-    - Tranquilo
-    - Bem
-    - Incrível
-    - Estou me sentindo muito bem
-    - Maravilhoso
-    - Estou me sentindo bem
-    - Estou bem
-    - Estou incrível
-    - Tudo bem
-    - Estou ótimo
-    - Tudo perfeito
-    - Tudo tranquilo
+    - perfeito
+    - otimo
+    - incrivel
 
 
 - intent: mood_unhappy
   examples: |
-    - Meu dia foi horrivel
-    - Eu estou triste
-    - Não estou me sentindo muito bem
-    - Eu estou disapontado
-    - Muito triste
-    - Eu estou muito triste
-    - Triste
-    - Mal
-    - Muito triste
-    - Desanimado
-    - Não estou bem
-    - Não muito bem
-    - Extremamente triste
+    - meu dia foi horrivel
+    - estou triste
+    - triste
+    - infeliz
+
 
 - intent: bot_challenge
   examples: |
-    - Você é um bot?
-    - Você é um humano?
-    - Você é uma pessoa?
-    - Eu estou conversando com um bot?
-    - Eu estou falando com uma pessoa de verdade?
+    - você é um bot?
+
+- intent: game_start
+  examples: |
+    - eu quero jogar um jogo
+    - jogar
+    - jogar quiz
+    - eu quero iniciar o quiz
+    - iniciar o quiz
+    - quiz
+    - game
+
+  
+- intent: game_answer
+  examples: |
+    - a
+    - acho que é a
+    - talvez a
+    - resposta a
+    - b
+    - acho que é a b
+    - talvez b
+    - resposta b
+    - c
+    - acho que é a c
+    - talvez c
+    - resposta c
+    
+

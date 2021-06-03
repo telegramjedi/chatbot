@@ -8,6 +8,12 @@ stories:
   - action: utter_greet
   - intent: mood_great
   - action: utter_happy
+  - intent: game_start
+  - action: utter_game_start
+  - intent: game_question
+  - action: utter_game_question
+  - intent: game_answer
+  - action: utter_game_answer
 
 - story: sad path 1
   steps:

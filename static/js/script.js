@@ -36,12 +36,16 @@ function scrollToBottomOfResults() {
 
 function send(message) {
 	console.log("User Message:", message)
+	
 	$.ajax({
-		url: 'https://rasablog.herokuapp.com/webhooks/rest/webhook',
+	
+		url: 'https://chatbotmatematico.herokuapp.com/webhooks/rest/webhook',
 		type: 'POST',
+		dataType: "jsonp",
 		data: JSON.stringify({
-			"message": message,
-			"sender": "username"
+			"sender": "username",
+			"message": "Oi"
+		 	//Ali me message era "message":message
 		}),
 		success: function (data, textStatus) {
 			setBotResponse(data);
@@ -57,6 +61,7 @@ function send(message) {
 
 //------------------------------------ Set bot response -------------------------------------
 function setBotResponse(val) {
+	console.log(val);
 	setTimeout(function () {
 		if (val.length < 1) {
 			//if there is no response from Rasa
